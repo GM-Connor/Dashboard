@@ -1,0 +1,198 @@
+
+*,
+::after,
+::before {
+	box-sizing: border-box
+}
+
+a {
+	text-decoration: none;
+	color: #3f9ddc;
+}
+
+html,
+body,
+#site-mount.row,
+#site-mount.row > .col {
+	height: 100%!important;
+}
+
+#site-mount.row > .col {
+	overflow-y: auto;
+}
+
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+.col {
+	flex-basis: 0; 
+	flex-grow: 1;
+	max-width: 100%;
+	position: relative;
+	width: 100%; 
+	padding-right: 15px;
+	padding-left: 15px
+}
+.content {
+	padding: 10px 0;
+}
+
+#navigation {
+	-ms-flex:0 0 23%;flex:0 0 23%;max-width:23%;
+	background-color: #f2f3f5;
+	border-right: 1px solid #e3e5e8;
+}
+
+#navigation > .wrapper {
+	font-size: 1.5em;
+    padding: 30px 40px;
+}
+
+#site-title {
+	margin-left: -10px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+#main {
+	-ms-flex:0 0 52%;flex:0 0 52%;max-width:52%;
+	background-color: #fff;
+}
+
+#main hr {
+	margin: 10px -15px;
+}
+
+.template-twitter #main .entry,
+.template-twitter .modal .tweet {
+	padding-left: 60px;
+	position: relative;
+}
+
+#main .entry img,
+.template-twitter .modal .tweet img {
+	position: absolute;
+	top: 5px;
+	border-radius: 100%;
+	left: 0;
+}
+
+#main .entry .user,
+.template-twitter .modal .tweet .title {
+	font-weight: bold;
+}
+
+#page-title,
+#sidebar-title {
+	font-size: 1.25em;
+	padding: 0 13px;
+	height: 45px;
+	line-height: 45px;
+	margin: 0 -15px 0;
+	border-bottom: 1px solid #e3e5e8;
+}
+
+
+
+
+
+#sidebar {
+	-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%;
+	background-color: #f2f3f5;
+	border-left: 1px solid #e3e5e8;
+}
+
+#sidebar-title {
+	border-color: #ddd; 
+}
+
+
+
+
+
+.template-settings .entry {
+	height: 38px;
+	line-height: 38px;
+	overflow: hidden;
+}
+
+.template-settings .entry+hr {
+	border-color: #e3e5e8;
+	margin: 10px -15px;
+}
+
+.template-settings .entry+.entry {
+	margin-top: 10px;
+}
+
+
+
+
+.template-twitter .modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	padding: 7px;
+	overflow: hidden;
+}
+
+.template-twitter .modal .inner {
+	position: relative;
+	background-color: #fff;
+	height: 100%;
+	width: 100%;
+	border-radius: 6px;
+	box-shadow: 0 5px 25px 2px rgba(0,0,0,.8);
+	/*padding: 15px 20px;*/
+}
+
+.template-twitter .modal .tweet {
+	padding: 15px 20px;
+	height: 95px;
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid #ddd;
+	padding-left: 20px;
+}
+
+.template-twitter .modal .tweet .info {
+	padding-left: 60px;
+	flex: 2
+}
+
+.template-twitter .modal .tweet img {
+	top: 0;
+}
+
+.template-twitter .modal .tweet button {
+	height: 100%;
+	width: 100%;
+}
+
+.template-twitter .modal .frames {
+	height: 100%;
+	padding-top: 104px;
+	/*margin-top: -48px;*/
+}
+
+.template-twitter .modal iframe {
+	padding-bottom: 10px;
+	/*overflow: hidden;*/
+	border-radius: 6px;
+	display: block;
+	height: 100%;
+	width: 100%;
+	border: 1px solid #ddd;
+}
